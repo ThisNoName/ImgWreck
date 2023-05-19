@@ -1,0 +1,44 @@
+<!-- create an HTML page, call restapi using javascript, get json data and display result-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website Home Page</title>
+  </head>
+  <body>
+    <h1>Welcome to mybucket-site</h1>
+    <p>Now hosted on Amazon S3!</p>
+    <a href="TagCloud.html">Tag Cloud</a>
+    <!-- <p id="demo"></p>
+    <script>
+      var xmlhttp = new XMLHttpRequest();
+      var url =
+        "https://8u40prdz61.execute-api.us-east-1.amazonaws.com/Prod/image/list";
+      xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          var myArr = JSON.parse(this.responseText);
+          myFunction(myArr);
+        }
+      };
+      xmlhttp.open("GET", url, true);
+      xmlhttp.send();
+      function myFunction(arr) {
+        var out = "";
+        var i;
+        for (i = 0; i < arr.length; i++) {
+          //out += '<img src="' + arr[i].ImageUrl + '" alt="' + arr[i].ImageName + '" width="200" height="200">';
+          console.log(arr[i]);
+          //out += JSON.stringify(arr[i]);
+          out +=
+            "<div><img src='" +
+            arr[i].key +
+            "' alt='" +
+            arr[i].ImageName +
+            "' width='200' height='200'></div>";
+        }
+        document.getElementById("demo").innerHTML = out;
+      }
+    </script>
+
+    <pre id="demo"></pre> -->
+  </body>
+</html>

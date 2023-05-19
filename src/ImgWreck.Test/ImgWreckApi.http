@@ -1,0 +1,13 @@
+@host = https://8u40prdz61.execute-api.us-east-1.amazonaws.com/Prod
+
+###
+GET {{host}}/ping 
+
+###
+GET {{host}}/image/list
+
+###
+GET {{host}}/image/tags
+
+###
+GET {{host}}/image/docs
